@@ -1,0 +1,44 @@
+body{
+    background-color: #9e9dec;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.center1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.center2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.center3{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.margin{
+    margin-top: 25%;
+}
+
+form{
+    width: 50%;
+    margin: 0 auto;
+}
