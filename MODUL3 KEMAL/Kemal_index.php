@@ -24,7 +24,7 @@
                   $results = mysqli_query($conn, $query);
 
                   if (mysqli_num_rows($results) > 0) {
-                     echo 'Kema_index.php?page=mycar';
+                     echo 'Kemal_index.php?page=mycar';
                   } else {
                      echo 'Kemal_index.php?page=additem';
                   }
