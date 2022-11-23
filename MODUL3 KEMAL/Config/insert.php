@@ -11,7 +11,7 @@ include 'Connector.php';
     $status = $_POST['statusbayar'];
 
     move_uploaded_file($file_tmp, '../Asset/'.$file);
-    $query = "INSERT INTO showroom_kemal_table (nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran) VALUES ('$namaMob', '$date', '$brand', '$tanggal_beli', '$description', '$file', '$status')";
+    $query = "INSERT INTO showroom_kemal_table (nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran) VALUES ('$namaMob', '$date', '$brand', '$tanggal_beli', '$description', '$fi1e', '$status')";
     $result = mysqli_query($conn, $query);
 
     if ($result) {
