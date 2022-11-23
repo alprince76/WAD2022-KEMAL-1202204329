@@ -15,7 +15,7 @@ include 'Connector.php';
 
     if ($file_tmp) {
         move_uploaded_file($file_tmp, '../Asset/'.$file);
-        $query = "UPDATE showroom_kemal_table SET nama_mobil = '$namaMob', pemilik_mobil = '$date', merk_mobil = '$brand', tanggal_beli = '$tanggal_beli', deskripsi = '$description', foto_mobil = '$file', status_pembayaran = '$status' WHILE id_mobil = $id";
+        $query = "UPDATE showroom_kemal_table SET nama_mobil = '$namaMob', pemilik_mobil = '$date', merk_mobil = '$brand', tanggal_beli = '$tanggal_beli', deskripsi = '$description', foto_mobil = '$file', status_pembayaran = '$status' id_mobil = $id";
         $result = mysqli_query($conn, $query);
     } else {
         $query = "UPDATE showroom_kemal_table SET nama_mobil = '$namaMob', pemilik_mobil = '$date', merk_mobil = '$brand', tanggal_beli = '$tanggal_beli', deskripsi = '$description', status_pembayaran = '$status' WHERE id_mobil = $id";

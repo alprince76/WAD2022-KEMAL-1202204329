@@ -1,6 +1,6 @@
 <?php 
 
-include "Connector.php";
+include 'Connector.php';
 
  $id = $_GET['id'];
 
