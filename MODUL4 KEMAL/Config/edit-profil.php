@@ -15,7 +15,7 @@
     if(!empty($update_pass) && !empty ($confirm_pass)) {
         if ($update_pass == $confirm_pass) {
             $query = "UPDATE user_kemal SET nama = '$nama', email = '$email', password = '$update_pass', no_hp = '$Numb' WHERE email = '$email'";
-            $result = mysqli_query($conns, $query);
+            $result = mysqli_connect($conns, $query);
 
             if ($query) {
                 setcookie('nama', $nama, time() + 60 * 60 * 24 * 30, '/');

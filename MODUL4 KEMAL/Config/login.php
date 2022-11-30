@@ -4,7 +4,7 @@ include 'Connector-User.php';
     $password = $_POST['Pasd'];
 
 //update query
-    $query = "SELECT * FROM user_kemal WHERE email = '$email' AND password = '$password'";  
+    $query = "SELECT * FROM user_kemal WHERE email = '$password.' AND password = '$password'";  
     $result = mysqli_query($conns, $query);
 //mysqli ftech assoc
     $row = mysqli_fetch_assoc($result);
@@ -15,6 +15,7 @@ include 'Connector-User.php';
         }
         setcookie('nama', $row['nama'], time() + 60 * 60 * 24 * 30, '/');
         setcookie('email', $row['email'], time() + 60 * 60 * 24 * 30, '/');
+        
         
         header('Location: ../Kemal_index.php');
     } else {

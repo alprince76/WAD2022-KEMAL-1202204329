@@ -33,7 +33,7 @@
                     <div class="mb-3">
                     <div class="mb-3">
                         <label for="DaysDur" class="form-label"><b>Kata Sandi</b></label>
-                        <input type="password" value="" placeholder="Password" name="Pasd" class="form-control" id="passd">
+                        <input type="password" value="" value="<?= $hasil['rememberme'] ?>" placeholder="Password" name="Pasd" class="form-control" id="passd">
                     </div>
                     <div class="form-check mb-4">
                         <input class="form-check-input me-2" type="checkbox" value="" name="remem" id="form2Example33" checked />
