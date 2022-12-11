@@ -1,5 +1,5 @@
 <?php
-    set($_COOKIE['nama']);
+    unset($_COOKIE['nama']);
     unset($_COOKIE['email']);
     unset($_COOKIE['password']);
     unset($_COOKIE['Numb']);

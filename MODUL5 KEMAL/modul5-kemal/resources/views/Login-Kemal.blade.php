@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modul3 Kemal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Style/style1.css?v=<?php echo time(); ?>"> 
 
-</head>
+@include('partial.header')
 <body>
-
+    @include('partial.navbar')
     <section class="register">
         <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
         <div class="row gx-lg-5 align-items-center mb-5">
@@ -23,7 +15,8 @@
             <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
 
         <div class="bg-gridtongs">
-            <form action="Config/login.php" method="post">
+            <form action="/login" method="post">
+                @csrf
                     <div> <h1>Login</h1></div>
                     <div class="mb-3">
                         <label for="Name1" class="form-label"><b>Email</b></label>
@@ -45,7 +38,7 @@
                         <input type="submit" class="btn btn-primary booking-cta" value="Login">
                     </div>
                     <div class="notedS">
-                        <p>Anda sudah punya akun? <a href="Kemal_index.php?page=register">Daftar</a></p>
+                        <p>Anda sudah punya akun? <a href="/register">Daftar</a></p>
                     </div>
             </form>
         </div>

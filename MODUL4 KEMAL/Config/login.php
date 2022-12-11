@@ -4,7 +4,7 @@ include 'Connector-User.php';
     $password = $_POST['Pasd'];
 
 //update query
-    $query = "SELECT * FROM user_kemal WHERE email = '$password.' AND password = '$password'";  
+    $query = "SELECT * FROM user_kemal WHERE email = '$email' AND password = '$password'";  
     $result = mysqli_query($conns, $query);
 //mysqli ftech assoc
     $row = mysqli_fetch_assoc($result);
